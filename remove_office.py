@@ -9,8 +9,11 @@ import os
 applications = '/Applications'
 ms_office = '/Applications/Microsoft\Office'
 ms_link = 'Applications/Microsoft Link.app'
+count = 0
 
 for app in os.listdir(applications):
-    #os.remove('Microsoft Office 2011')
-    os.remove('Chromecast.app')
+    if count < 1:
+        #os.remove('Microsoft Office 2011')
+        os.system("rm -rf Chromecast.app")
     print(app)
+    count += 1
