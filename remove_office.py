@@ -12,5 +12,5 @@ ms_link = 'Applications/Microsoft Link.app'
 
 for app in os.listdir(applications):
     #os.remove('Microsoft Office 2011')
-    os.remove('Docker.app')
+    os.remove('Chromecast.app')
     print(app)
